@@ -3,7 +3,7 @@ pipeline {
      stages {
          stage('scm checkout') {
               steps {
-                 
+                 deletedir()
                  sh 'git clone -b master https://github.com/Thilak09/react-nodejs-example.git'
               }
          }
