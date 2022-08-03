@@ -16,7 +16,7 @@ pipeline {
          }
          stage('deployment') {
               steps {
-                   #fgh
+                   #fghj
                    sh 'docker stop thilakscontainer' 
                  sh 'docker rm thilakscontainer' 
                 sh 'docker run -itd --name thilakscontainer -p 8081:80 taskimage'
